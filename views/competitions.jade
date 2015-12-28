@@ -1,0 +1,17 @@
+extends layout
+
+block content
+    h1 KIDA #{year} Competitions
+    table
+        tr
+            th Date
+            th Event Name
+            th Location
+            th Link
+            each comp in compArray
+                tr
+                    td= comp.Date
+                    td= comp.EventName
+                    td= comp.Location
+                    td
+                        a(href='/competitions/'+ comp.EventGuid) Lineup
