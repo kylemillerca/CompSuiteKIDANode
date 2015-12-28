@@ -1,0 +1,11 @@
+block content
+    h1 KIDA #{year} Registered Units
+    table
+        th Unit Name
+        th Unit Division
+        th Number of Shows
+        each unit, unitName in units
+            tr
+                td= unitName
+                td= unit.division
+                td= unit.competitions.length
