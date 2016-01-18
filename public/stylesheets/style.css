@@ -8,4 +8,16 @@ a {
 input[disabled]:checked {
   outline: 2px solid red; }
 
+td.div-name {
+  font-weight: bold;
+  font-size: 125%;
+  text-align: left;
+  padding-top: 20px; }
+
+td.unit-name {
+  text-align: left; }
+
+h1.lineup:not(:first-child) {
+  padding-top: 80px; }
+
 /*# sourceMappingURL=style.css.map */

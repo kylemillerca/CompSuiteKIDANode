@@ -1,0 +1,22 @@
+extends layout
+
+block content
+    h1(class='lineup') #{event} Lineup
+    table
+        each division in groupArray
+            tr(class='div-name')
+                td(class='div-name')= division.units[0].DivisionName
+            each group in division.units
+                tr(class='unit-name')
+                    td(class='unit-name')= group.GroupName
+
+    if waitlistArray && waitlistArray.length > 0
+        h1(class='lineup') #{event} Wait List
+        table
+            each division in waitlistArray
+                tr(class='div-name')
+                    td(class='div-name')= division.units[0].DivisionName
+                each group in division.units
+                    tr(class='unit-name')
+                        td(class='unit-name')= group.GroupName
+
